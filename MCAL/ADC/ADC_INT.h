@@ -1,0 +1,1 @@
+#ifndef _ADC_INTERFACE_H_#define _ADC_INTERFACE_H_void ADC_SetCallBack(void(*LocPF)(void));void ADC_VidINIT(void);void ADC_Start_Conversion(void);void ADC_Select_Channal(u8 Channal);void ADC_Interrupt_Enable(void);void ADC_Wait_Flag(void);void ADC_Get_Result(u16 *ptr);#endif
