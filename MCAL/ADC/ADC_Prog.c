@@ -13,7 +13,7 @@ void ADC_SetCallBack(void(*LocPFunc)(void))
 {
 GPFunc=LocPFunc;	
 }
-
+/***********ISR FUNCTION ***********/
 ISR(__vector_16)
 {
 	if(GPFunc!=NULL)
@@ -72,6 +72,7 @@ void ADC_VidINIT(void)
 		CLR_BIT(ADMUX,ADLAR);
 	#elif	ADC_SAVE_FROM==Left_Adjust
 		SET_BIT(ADMUX,ADLAR);
+
 	#endif
 	/***************ADC MODE******************/
 	#if	ADC_Mode==ADC_Single_Conversion

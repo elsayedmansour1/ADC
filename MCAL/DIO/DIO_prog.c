@@ -87,7 +87,7 @@ u8 DIO_u8GetPinValue	(u8 LOC_u8Port,u8 LOC_u8Pin)
 	case DIO_PORTA:Value=GET_BIT(PORTA,LOC_u8Pin);break;
 	case DIO_PORTB:Value=GET_BIT(PORTB,LOC_u8Pin);break;
 	case DIO_PORTC:Value=GET_BIT(PORTC,LOC_u8Pin);break;
-	case DIO_PORTD:Value=GET_BIT(PORTD,LOC_u8Pin);break;	
+	case DIO_PORTD:Value=GET_BIT(PORTD,LOC_u8Pin);break;
 	}
 	return Value;
 }
